@@ -19,6 +19,7 @@ import {
 } from '../../lib/public-types';
 
 export const movexClientMasterOrchestrator = () => {
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   let unsubscribe = async () => {};
 
   const orchestrate = <S, A extends AnyAction, TResourceType extends string>({
@@ -91,7 +92,7 @@ export type MovexClientMasterOrchestrator =
   typeof movexClientMasterOrchestrator;
 
 export const orchestrateMovex = <
-  TState extends any,
+  TState,
   TAction extends AnyAction = AnyAction,
   TResourceType extends string = string
 >(
