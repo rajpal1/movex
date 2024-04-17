@@ -7,6 +7,7 @@ export {
   type MovexContextProps as MovexReactContextProps,
 } from './lib/MovexContext';
 
-export * from './lib/MovexBoundResource';
+export { MovexBoundResourceComponent as MovexBoundResource } from './lib/MovexBoundResourceComponent';
+export { ResourceObservablesRegistry as MovexResourceObservablesRegistry } from './lib/ResourceObservableRegistry';
 export * from './lib/MovexConnection';
 export * from './lib/hooks';
